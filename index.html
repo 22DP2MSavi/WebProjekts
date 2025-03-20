@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabbed Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#game">Game</a></li>
+                <li><a href="#leaderboard">Leaderboard</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <li><a href="#help">Help</a></li>
+                <li class="dropdown">
+                    <a href="#account">Account &#9776;</a>
+                    <div class="dropdown-content">
+                        <a href="#signin">Sign In</a>
+                        <a href="#register">Register</a>
+                    </div>
+                </li>
+            </ul>
+            <button id="darkModeToggle">🌙</button>
+        </nav>
+    </header>
+    <main>
+        <section id="home"></section>
+        <section id="game"></section>
+        <section id="leaderboard"></section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: example@gmail.com</p>
+            <p>Phone: +123456789</p>
+        </section>
+        <section id="settings"></section>
+        <section id="help"></section>
+    </main>
+</body>
+</html>

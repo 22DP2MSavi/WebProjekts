@@ -12,7 +12,6 @@
 
     <h1 style="margin-top: 50px;">Register</h1>
     <div class="navbar">
-
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="help.html">Help</a>
@@ -27,20 +26,45 @@
                 <a href="#">Log out</a>
             </div>
         </div>
+
     </div>
 
+    <div class="form-container">
+        <form action="#" method="post">
+            <div class="input-group">
+                <label for="email">Gmail</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Gmail" required>
+            </div>
 
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
 
+            <div class="input-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password"
+                    required>
+            </div>
 
+            <div class="button-group">
+                <button type="submit" class="btn">Register</button>
+            </div>
+        </form>
+    </div>
 
     <footer>
         <p>Copyright © 2024 Matīss Savickis</p>
     </footer>
 
     <script>
-
         if (localStorage.getItem('darkMode') === 'enabled') {
             document.body.classList.add('dark-mode');
+        }
+
+        function toggleMenu() {
+            var menu = document.querySelector('.navbar');
+            menu.classList.toggle('active');
         }
     </script>
 </body>
